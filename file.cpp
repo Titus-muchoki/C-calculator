@@ -5,12 +5,12 @@
    printf("\n");
      printf("\n");
      char ch;
-     int num1,num2;
+     int num1,num2, num3;
   printf("***************************\n");
   printf("");
    printf("\n");
      printf("\n");
-     printf("Choose an operator(+,-,*,/,%%): ");
+     printf("Choose an operator(+,-,*,/,%): ");
      scanf("%c",&ch);
   printf("Input your numbers here\n");
    printf("\n");
@@ -18,8 +18,8 @@
   printf("*****************************\n");
    printf("\n");
      printf("\n");
-     printf("Enter two numbers: ");
-     scanf("%d %d",&num1,&num2);
+     printf("Enter three numbers: ");
+     scanf("%d %d %d",&num1,&num2,&num3);
      printf("\n");
      printf("\n");
      printf("Check your results\n");
@@ -30,19 +30,19 @@
      {
        case '+':
        
-         printf("%d + %d =\t%d\n",num1,num2,num1+num2); 
+         printf("%d + %d =\t%d\n",num1,num2,num1+num2+num3); 
          break;
        case '-':
-         printf("%d - %d =\t%d\n",num1,num2,num1-num2);
+         printf("%d - %d =\t%d\n",num1,num2,num1-num2-num3);
          break;
        case '*':
-         printf("%d * %d =\t%d\n",num1,num2,num1*num2);
+         printf("%d * %d =\t%d\n",num1,num2,num1*num2*num3);
          break;
        case '/':
-         printf("%d / %d =\t%d\n",num1,num2,num1/num2);
+         printf("%d / %d =\t%d\n",num1,num2,num1/num2/num3);
          break;
        case '%':
-         printf("%d %% %d =\t%d\n",num1,num2,num1%num2);
+         printf("%d %% %d =\t%d\n",num1,num2,num1%num2%num3);
          break;
        default:
          printf("Error! Invalid Operator.");
